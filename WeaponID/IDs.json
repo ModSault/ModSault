@@ -79,7 +79,7 @@
             "First16BitsOfInstruction_USA":"38A0",
             "First16BitsOfInstruction_PAL":"38A0",
             "First16BitsOfInstruction_JAPAN":"38A0",
-            "Notes":"Not sure why 3 of these exist. I think the equation that determines which one to use is depednent on a fixed variable and the Arwing's y-position? I'm not really sure.",
+            "Notes":"Not sure why 3 of these exist. I think the equation that determines which one to use is dependent on a fixed variable and the Arwing's y-position? I'm not really sure.",
             "Unused":0
         },
         {
@@ -289,7 +289,7 @@
             "First16BitsOfInstruction_USA":"38A0",
             "First16BitsOfInstruction_PAL":"38A0",
             "First16BitsOfInstruction_JAPAN":"38A0",
-            "Notes":"Seems that turning the ship enough with the ananlog stick counts for the 'tilting' requirement.",
+            "Notes":"Seems that turning the ship enough with the analog stick counts for the 'tilting' requirement.",
             "Unused":0
         },
         {
@@ -4580,7 +4580,7 @@
         },
         {
             "ID":63,
-            "Name":"Enemy Colliding (at least for On-Rails Arwing) \n+ Red Missile (Stealth Squadron, Pigma, Thing before Oikonny runs away) \n+ Mission 1 Aparoid Boss (Fire beam, Spawned Meteors) \n+ 2nd stage of aparoid MiniBoss in Mission 5 + 10 (Multiple green homing attack) \n+ Fake Queen (Multiple green homing attacks) \n+ Thing that sticks to Arwing in Mission 5 \n+ Aparoid's chasing teamate (crash into)",
+            "Name":"Enemy Colliding (at least for On-Rails Arwing) \n+ Red Missile (Stealth Squadron, Pigma, Thing before Oikonny runs away) \n+ Mission 1 Aparoid Boss (Fire beam, Spawned Meteors) \n+ 2nd stage of aparoid MiniBoss in Mission 5 + 10 (Multiple green homing attack) \n+ Fake Queen (Multiple green homing attacks) \n+ Thing that sticks to Arwing in Mission 5 \n+ Aparoid's chasing teammate (crash into)",
             "Damage_Singleplayer_USA":[
                 0,
                 0,
@@ -4646,7 +4646,7 @@
         },
         {
             "ID":64,
-            "Name":"Mission 1 crashing into Big Mech (Oikinny, Prototype, both 2 parted mechs) \n+ Mission 5 (red beams from device on meteor) \n+ Pigma (Thrown Rocks)",
+            "Name":"Mission 1 crashing into Big Mech (Oikonny, Prototype, both 2 parted Machines) \n+ Mission 5 (red beams from device on meteor) \n+ Pigma (Thrown Rocks)",
             "Damage_Singleplayer_USA":[
                 0,
                 0,
@@ -5042,7 +5042,7 @@
         },
         {
             "ID":70,
-            "Name":"Weak Apariod From Hatcher (touch while charing tackle)",
+            "Name":"Weak Aparoid From Hatcher (touch while charing tackle)",
             "Damage_Singleplayer_USA":[
                 20,
                 20,
@@ -5108,7 +5108,7 @@
         },
         {
             "ID":71,
-            "Name":"Strong Apariod From Hatcher (touch while charing tackle)",
+            "Name":"Strong Aparoid From Hatcher (touch while charing tackle)",
             "Damage_Singleplayer_USA":[
                 30,
                 30,
@@ -5570,7 +5570,7 @@
         },
         {
             "ID":78,
-            "Name":"Weak Apariod From Hatcher (Tackle)",
+            "Name":"Weak Aparoid From Hatcher (Tackle)",
             "Damage_Singleplayer_USA":[
                 0,
                 0,
@@ -5636,7 +5636,7 @@
         },
         {
             "ID":79,
-            "Name":"Strong Apariod From Hatcher (Tackle)",
+            "Name":"Strong Aparoid From Hatcher (Tackle)",
             "Damage_Singleplayer_USA":[
                 0,
                 0,
@@ -6164,7 +6164,7 @@
         },
         {
             "ID":87,
-            "Name":"Weak Apariod twin shooter (both left and right)",
+            "Name":"Weak Aparoid twin shooter (both left and right)",
             "Damage_Singleplayer_USA":[
                 20,
                 35,
@@ -6230,7 +6230,7 @@
         },
         {
             "ID":88,
-            "Name":"Strong Apariod twin shooter (both left and right)",
+            "Name":"Strong Aparoid twin shooter (both left and right)",
             "Damage_Singleplayer_USA":[
                 30,
                 50,
@@ -6428,7 +6428,7 @@
         },
         {
             "ID":91,
-            "Name":"Stationary Aparoid Turrent (Shot)",
+            "Name":"Stationary Aparoid Turret (Shot)",
             "Damage_Singleplayer_USA":[
                 20,
                 35,
@@ -7286,7 +7286,7 @@
         },
         {
             "ID":104,
-            "Name":"Corneria Flying Bomb Dropping Apparoid (Black + Red Ball Projectile) \n+ Aparoid Homeworld Ceiling Rider (Black + Red Ball Projectile)",
+            "Name":"Corneria Flying Bomb Dropping Aparoid (Black + Red Ball Projectile) \n+ Aparoid Homeworld Ceiling Rider (Black + Red Ball Projectile)",
             "Damage_Singleplayer_USA":[
                 80,
                 0,
@@ -7946,7 +7946,7 @@
         },
         {
             "ID":114,
-            "Name":"Pigma (when face is revelaed, homing attack)",
+            "Name":"Pigma (when face is revealed, homing attack)",
             "Damage_Singleplayer_USA":[
                 90,
                 100,
@@ -8210,7 +8210,7 @@
         },
         {
             "ID":118,
-            "Name":"Sargasso Boomerang Shaped Flying Enemy (shot while chasing teamate)",
+            "Name":"Sargasso Boomerang Shaped Flying Enemy (shot while chasing teammate)",
             "Damage_Singleplayer_USA":[
                 120,
                 120,
@@ -8276,7 +8276,7 @@
         },
         {
             "ID":119,
-            "Name":"Blue X Shaped Aparoid Chasing Teamate (shot)",
+            "Name":"Blue X Shaped Aparoid Chasing Teammate (shot)",
             "Damage_Singleplayer_USA":[
                 120,
                 120,
@@ -8738,7 +8738,7 @@
         },
         {
             "ID":126,
-            "Name":"General Pepper (Figit Spinner Shaped thing's Shot)",
+            "Name":"General Pepper (Fidget Spinner Shaped thing's Shot)",
             "Damage_Singleplayer_USA":[
                 60,
                 60,
@@ -9068,7 +9068,7 @@
         },
         {
             "ID":131,
-            "Name":"Sargasso Meteor Turrent",
+            "Name":"Sargasso Meteor Turret",
             "Damage_Singleplayer_USA":[
                 0,
                 70,
@@ -10190,7 +10190,7 @@
         },
         {
             "ID":148,
-            "Name":"Sargasso Circular Flying Enemy (shot while chasing teamate)",
+            "Name":"Sargasso Circular Flying Enemy (shot while chasing teammate)",
             "Damage_Singleplayer_USA":[
                 120,
                 120,
@@ -10322,7 +10322,7 @@
         },
         {
             "ID":150,
-            "Name":"Y Shaped Flying Aparoid (shot while Chasing Teamate) \n+ Infected Cornerian Airship (shot while chasing teamate)",
+            "Name":"Y Shaped Flying Aparoid (shot while Chasing Teammate) \n+ Infected Cornerian Airship (shot while chasing teammate)",
             "Damage_Singleplayer_USA":[
                 120,
                 120,
