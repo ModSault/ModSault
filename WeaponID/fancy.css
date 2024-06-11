@@ -47,6 +47,9 @@
 #tableGrid > *:nth-child(3) { border-left: #dbdbdb 1px solid; }
 #tableGrid > *:nth-child(10), #tableGrid > *:nth-child(11), #tableGrid > *:nth-child(18) { border-top: #dbdbdb 1px solid; }
 
+#tableGrid > *:nth-child(9n+3), #tableGrid > *:nth-child(9n+4), #tableGrid > *:nth-child(9n+5) { background-color: #1c235d; }
+#tableGrid > *:nth-child(9n+6), #tableGrid > *:nth-child(9n+7), #tableGrid > *:nth-child(9n+8) { background-color: #182c25; }
+
 /* -------------------- Changing HardCoded Weapons ----------------------- */
 
 #CustomHardCodedContainer {
