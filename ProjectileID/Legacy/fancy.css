@@ -10,8 +10,8 @@
 }
 #tableGrid_hc p { margin: 0; }
 #tableGrid_hc > * {
-    border-bottom: #dbdbdb 1px solid;
-    border-right: #dbdbdb 1px solid;
+    border-bottom: var(--table-border-color) 1px solid;
+    border-right: var(--table-border-color) 1px solid;
     text-align: center;
     padding: 5px;
     display: flex;
@@ -19,8 +19,8 @@
     align-items: center;
     flex-wrap: wrap;
 }
-#tableGrid_hc > *:nth-child(-n+4) { border-top: #dbdbdb 1px solid; }
-#tableGrid_hc > *:nth-child(4n+1) { border-left: #dbdbdb 1px solid; }
+#tableGrid_hc > *:nth-child(-n+4) { border-top: var(--table-border-color) 1px solid; }
+#tableGrid_hc > *:nth-child(4n+1) { border-left: var(--table-border-color) 1px solid; }
 
 /* -------------------- Documentation of Weapon Damage ----------------------- */
 
@@ -32,8 +32,8 @@
 }
 #tableGrid p { margin: 0; }
 #tableGrid > * {
-    border-bottom: #dbdbdb 1px solid;
-    border-right: #dbdbdb 1px solid;
+    border-bottom: var(--table-border-color) 1px solid;
+    border-right: var(--table-border-color) 1px solid;
     text-align: center;
     padding: 5px;
     display: flex;
@@ -41,14 +41,14 @@
     align-items: center;
     flex-wrap: wrap;
 }
-#tableGrid > *:nth-child(-n+9) { border-top: #dbdbdb 1px solid; }
-#tableGrid > *:nth-child(9n+1) { border-left: #dbdbdb 1px solid; }
+#tableGrid > *:nth-child(-n+9) { border-top: var(--table-border-color) 1px solid; }
+#tableGrid > *:nth-child(9n+1) { border-left: var(--table-border-color) 1px solid; }
 
-#tableGrid > *:nth-child(3) { border-left: #dbdbdb 1px solid; }
-#tableGrid > *:nth-child(10), #tableGrid > *:nth-child(11), #tableGrid > *:nth-child(18) { border-top: #dbdbdb 1px solid; }
+#tableGrid > *:nth-child(3) { border-left: var(--table-border-color) 1px solid; }
+#tableGrid > *:nth-child(10), #tableGrid > *:nth-child(11), #tableGrid > *:nth-child(18) { border-top: var(--table-border-color) 1px solid; }
 
-#tableGrid > *:nth-child(9n+3), #tableGrid > *:nth-child(9n+4), #tableGrid > *:nth-child(9n+5) { background-color: #1c235d; }
-#tableGrid > *:nth-child(9n+6), #tableGrid > *:nth-child(9n+7), #tableGrid > *:nth-child(9n+8) { background-color: #182c25; }
+#tableGrid > *:nth-child(9n+3), #tableGrid > *:nth-child(9n+4), #tableGrid > *:nth-child(9n+5) { background-color: var(--a-generic-background-blue); }
+#tableGrid > *:nth-child(9n+6), #tableGrid > *:nth-child(9n+7), #tableGrid > *:nth-child(9n+8) { background-color: var(--a-generic-background-green); }
 
 /* -------------------- Changing HardCoded Weapons ----------------------- */
 
@@ -59,11 +59,11 @@
     justify-content: center;
     font-size: 18px;
 }
-#CustomHardCodedContainer > *:nth-child(-n+4) { border-top: #dbdbdb 1px solid; margin: 0; }
-#CustomHardCodedContainer > *:nth-child(4n+1) { border-left: #dbdbdb 1px solid; }
+#CustomHardCodedContainer > *:nth-child(-n+4) { border-top: var(--table-border-color) 1px solid; margin: 0; }
+#CustomHardCodedContainer > *:nth-child(4n+1) { border-left: var(--table-border-color) 1px solid; }
 #CustomHardCodedContainer > * {
-    border-bottom: #dbdbdb 1px solid;
-    border-right: #dbdbdb 1px solid;
+    border-bottom: var(--table-border-color) 1px solid;
+    border-right: var(--table-border-color) 1px solid;
     display: flex;
     flex-direction: row;
     padding: 5px;
@@ -79,11 +79,11 @@
     text-align: center;
     font-size: 18px;
 }
-#CustomWeaponDamageContainer > *:nth-child(-n+6) { border-top: #dbdbdb 1px solid; margin: 0; }
-#CustomWeaponDamageContainer > *:nth-child(6n+1) { border-left: #dbdbdb 1px solid; }
+#CustomWeaponDamageContainer > *:nth-child(-n+6) { border-top: var(--table-border-color) 1px solid; margin: 0; }
+#CustomWeaponDamageContainer > *:nth-child(6n+1) { border-left: var(--table-border-color) 1px solid; }
 #CustomWeaponDamageContainer > * {
-    border-bottom: #dbdbdb 1px solid;
-    border-right: #dbdbdb 1px solid;
+    border-bottom: var(--table-border-color) 1px solid;
+    border-right: var(--table-border-color) 1px solid;
     display: flex;
     flex-direction: row;
     padding: 5px;
@@ -177,13 +177,14 @@
     justify-content: center;
     width: 100px;
     margin-left: 20px;
+    background-color: var(--button-background-color);
 }
 
 #CodeToInfo { border-top: none; }
 #CodeToInfo_Before {
     width: 140px;
     height: 30px;
-    background-color: #F0F0F0;
+    background-color: var(--button-background-color);
     border-bottom: 0;
     clip-path: polygon(50% 0%, 0% 101%, 100% 101%);
 }
@@ -192,7 +193,7 @@
 #InfoToCode_After, #RandomInfoToCode_After {
     width: 140px;
     height: 30px;
-    background-color: #F0F0F0;
+    background-color: var(--button-background-color);
     border-top: 0;
     clip-path: polygon(50% 101%, 0% 0%, 101% 0%);
 }
@@ -207,7 +208,7 @@
 }
 .WarningText {
     margin: auto;
-    color: orange;
+    color: var(--warning-text-color);
     text-align: center;
 }
 textarea {
@@ -228,11 +229,11 @@ textarea {
     text-align: center;
     font-size: 18px;
 }
-#RandomizeDamageContainer > *:nth-child(-n+6) { border-top: #dbdbdb 1px solid; margin: 0; }
-#RandomizeDamageContainer > *:nth-child(6n+1) { border-left: #dbdbdb 1px solid; }
+#RandomizeDamageContainer > *:nth-child(-n+6) { border-top: var(--table-border-color) 1px solid; margin: 0; }
+#RandomizeDamageContainer > *:nth-child(6n+1) { border-left: var(--table-border-color) 1px solid; }
 #RandomizeDamageContainer > * {
-    border-bottom: #dbdbdb 1px solid;
-    border-right: #dbdbdb 1px solid;
+    border-bottom: var(--table-border-color) 1px solid;
+    border-right: var(--table-border-color) 1px solid;
     display: flex;
     /* flex-direction: row; */
     padding: 5px;
@@ -261,5 +262,3 @@ textarea {
 }
 .Random_OtherBox label { font-size: 16px; }
 .Random_OtherBox > * { margin: auto; }
-
-.Random_OtherBox div, .Random_DamageType div  { opacity: 10%; }

@@ -1,6 +1,7 @@
 /* ---------------------- Making Table ----------------------------- */
 
 var JsonFile = null;
+var JsonFile_ProjectileIDsNames = null;
 
 function removeAllChildrenAndParentElement(parent) {
     while (parent.firstChild) {
@@ -33,7 +34,7 @@ function makeTable() {
         id = JsonFile.WeaponIDs[i].ID;
         
         // Probably need to make the divs and such in a less lazy way, but I lack time
-        toAdd += "<p>" + JsonFile.WeaponIDs[i].Name.replaceAll("\n","<br>") + "</p>";
+        toAdd += "<p>" + JsonFile_ProjectileIDsNames[id].replaceAll("+","<br>+") + "</p>";
         toAdd += "<p>" + id + "<span class=\"AdvancedOnly\">&#160(" +  id.toString(16).toUpperCase() + ")</span></p>";
         curString = "_Singleplayer";
         for (var k = 0; k < 2; k++) {
@@ -71,10 +72,25 @@ function makeTable_hc() {
     document.getElementById("tableGrid_hc").innerHTML += toAdd;
 }
 function LoadJSONFile(indexReplace = -1) {
-    fetch('IDs.json')
-    .then(response => response.json())
-    .then(data => { JsonFile = data; makeTable(indexReplace); makeTable_hc(indexReplace); resetHelpText(); })
+    fetch('../../Documentation/ProjectileIDs_names.json')
+    .then(response1 => response1.json())
+    .then(data1 => {
+        JsonFile_ProjectileIDsNames = data1;
+        fetch('../../Documentation/ProjectileIDs_legacy.json')
+        .then(response2 => response2.json())
+        .then(data2 => {
+            JsonFile = data2;
+            makeTable(indexReplace);
+            makeTable_hc(indexReplace);
+            resetHelpText();
+        })
+        .catch(error => { console.error('Error reading JSON file: ', error); });
+    })
     .catch(error => { console.error('Error reading JSON file: ', error); });
+    // fetch('IDs.json')
+    // .then(response => response.json())
+    // .then(data => { JsonFile = data; makeTable(indexReplace); makeTable_hc(indexReplace); resetHelpText(); })
+    // .catch(error => { console.error('Error reading JSON file: ', error); });
 }
 LoadJSONFile();
 
@@ -172,7 +188,7 @@ function addSelectForAllWeapons(idToLookFor, forGameModes, startValue = 0) {
         for (var i = 0; i < JsonFile.WeaponIDs.length; i++) {
             weaponJSON = JsonFile.WeaponIDs[i];
             var option = document.createElement("option");
-            option.text = weaponJSON.Name.substring(0, 100);
+            option.text = JsonFile_ProjectileIDsNames[weaponJSON.ID].substring(0, 100);
             if (option.text == "-") option.text = "(id: " + weaponJSON.ID + ")";
             option.value = weaponJSON.ID;
             if (weaponJSON.Unused == 1) option.className = "AdvancedOnly";
@@ -1080,7 +1096,7 @@ function addWeaponTypeDropdown_Random() {
         option.value = i;
         select.appendChild(option);
     }
-    select.value = 0;
+    select.value = 1;
 
     var numOfCodes_random_copy = numOfCodes_random;
     select.onchange = function() {
@@ -1121,7 +1137,7 @@ function addNumberRange_Random(forIds = true, updateMinInOther = true) {
     input.className = "WeaponDamage_TextInput";
     if (forIds) {
         input.min = "0";
-        input.max = JsonFile.HardcodedDamage.length-1;
+        input.max = JsonFile.WeaponIDs.length-1;
     } else {
         input.min = "-32768";
         input.max = "32767";
