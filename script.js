@@ -36,10 +36,13 @@ function changeGameVersion(object) {
 
 function toggleAdvanced() {
     button = document.getElementById("AdvancedModeButton");
+    text = button.childNodes[1];
     if (advancedMode === true) {
         button.style.backgroundColor = "var(--red-button)";
+        text.textContent = "(currently off)";
     } else {
         button.style.backgroundColor = "var(--green-button)";
+        text.textContent = "(currently on)";
     }
     advancedMode = !advancedMode
     localStorage.setItem("AdvancedMode", advancedMode);
@@ -73,7 +76,7 @@ function hoverToolTipEnd() {
 
 function makeNavBar(pathToRoot) {
     // JSON with Navbar contents. Makes it easier to update
-    AllElements = [
+    let AllElements = [
         {
             "text": "Home",
             "link": pathToRoot + "/"
@@ -193,11 +196,17 @@ function makeHeader(title, funcToCall = null) {
     } else {
         advancedModeButton.style.backgroundColor = "var(--red-button)";
     }
-    advancedModeButton.textContent = "Advanced Mode";
     topRightDiv.appendChild(advancedModeButton);
 
-    // have dropdown of gamemodes appear correctly
-    // gameVersionSelector.value = GameVersion;
+    // ---<p>Advanced Mode</p>
+    let advancedModeText_1 = document.createElement("p");
+    advancedModeText_1.textContent = "Advanced Mode";
+    advancedModeButton.appendChild(advancedModeText_1);
+
+    // ---<p>(currently on/off)</p>
+    let advancedModeText_2 = document.createElement("p");
+    advancedModeText_2.textContent = "(currently " + (advancedMode ? "on" : "off") + ")";
+    advancedModeButton.appendChild(advancedModeText_2);
 
     // add header to page
     let scriptTag = document.currentScript;

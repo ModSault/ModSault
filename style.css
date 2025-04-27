@@ -62,10 +62,22 @@ body { margin: 0; }
 #AdvancedModeButton {
   display: flex;
   margin: 2px;
-  height: 35px;
+  height: 40px;
   font-size: 20px;
   align-items: center;
-  margin: auto; 
+  margin: auto;
+  position: relative;
+}
+#AdvancedModeButton p:nth-child(1) {
+  position: relative;
+  top: -5px;
+}
+#AdvancedModeButton p:nth-child(2) {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  width: calc(100% - 12px);
+  font-size: 12px;
 }
 
 /* ---------------- Navbar ----------------- */
@@ -76,6 +88,7 @@ body { margin: 0; }
   background-color: var(--navbar-background-color);
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #NavBar > a, .NavBar_dropdown p, .NavBar_dropdown div a {
